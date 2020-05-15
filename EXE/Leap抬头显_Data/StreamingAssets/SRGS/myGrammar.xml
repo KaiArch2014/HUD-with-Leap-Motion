@@ -1,0 +1,28 @@
+<grammar version="1.0" xml:lang="zh-CN" root="playCommands"
+ xmlns="http://www.w3.org/2001/06/grammar">
+
+  <rule id="playCommands">
+    <ruleref uri="#playAction" />
+    <ruleref uri="#fileWords" />
+  </rule>
+
+  <rule id="playAction">
+    <one-of>
+      <item> 头显 </item>
+      <item> interface </item>
+      <item> dashboard </item>
+      <item> navigation </item>
+      <item> message </item>
+      <item> mailbox </item>
+      <item> call </item>
+    </one-of>
+  </rule>
+
+  <rule id="fileWords">
+    <one-of>
+      <item> on </item>
+      <item> off </item>
+    </one-of>
+  </rule>
+
+</grammar>
